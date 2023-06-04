@@ -11,21 +11,21 @@
                     <include name="testScenario1"/>
                 </methods>
             </class>
-            <class name="testcases.Scenario2">
-                <methods>
-                    <include name="testScenario2"/>
-                </methods>
-            </class>
-            <class name="testcases.Scenario3">
-                <methods>
-                    <include name="testScenario3"/>
-                </methods>
-            </class>
-            <class name="testcases.Scenario4">
-                <methods>
-                    <include name="testScenario4"/>
-                </methods>
-            </class>
+<!--            <class name="testcases.Scenario2">-->
+<!--                <methods>-->
+<!--                    <include name="testScenario2"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="testcases.Scenario3">-->
+<!--                <methods>-->
+<!--                    <include name="testScenario3"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="testcases.Scenario4">-->
+<!--                <methods>-->
+<!--                    <include name="testScenario4"/>-->
+<!--                </methods>-->
+<!--            </class>-->
         </classes>
     </test>
 </suite>

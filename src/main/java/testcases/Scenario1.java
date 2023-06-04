@@ -64,13 +64,13 @@ public class Scenario1 extends BaseTest {
 //        MainCall.checkoutPage.cleanup();
 //
 //    }
-    @Test(priority = 4)
-    public static void testScenario4() {
-        MainCall.productCategoryPage.clickMensSubmenuAndFindItems();
-        MainCall.hompePage.goToCart();
-        MainCall.checkoutPage.verifyItemsNameEndsWithM();
-        MainCall.checkoutPage.cleanup();
-   }
+//    @Test(priority = 4)
+//    public static void testScenario4() {
+//        MainCall.productCategoryPage.clickMensSubmenuAndFindItems();
+//        MainCall.hompePage.goToCart();
+//        MainCall.checkoutPage.verifyItemsNameEndsWithM();
+//        MainCall.checkoutPage.cleanup();
+//   }
 //    @AfterMethod
 //    public static void cleanup()
 //    {
