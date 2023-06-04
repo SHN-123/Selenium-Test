@@ -1,0 +1,8 @@
+
+/screenshots/
+/recordings/**
+
+
+/.idea/
+/reports/**
+/target/
