@@ -226,11 +226,11 @@
             <artifactId>java-dotenv</artifactId>
             <version>3.0.0</version>
         </dependency>
-        <dependency>
-            <groupId>com.venturedive</groupId>
-            <artifactId>testrail-integration</artifactId>
-            <version>9.9-SNAPSHOT</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.venturedive</groupId>-->
+<!--            <artifactId>testrail-integration</artifactId>-->
+<!--            <version>9.9-SNAPSHOT</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>net.rcarz</groupId>
             <artifactId>jira-client</artifactId>
