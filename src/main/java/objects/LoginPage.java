@@ -11,7 +11,7 @@ import org.openqa.selenium.WebElement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import static com.venturedive.base.config.BaseConfigProperties.projectName;
+//import static com.venturedive.base.config.BaseConfigProperties.projectName;
 import static config.ConfigProperties.Url;
 import static config.ConfigProperties.appConfig;
 
@@ -150,21 +150,21 @@ public class LoginPage
     }
 
     //Example DB Integration From jar
-    public void dataBaseQuery() throws SQLException {
-        ResultSet resultSet = MainCall.dbOp.getResult(selectQuery);
-        while (resultSet.next()) {
-            projectName = resultSet.getString("PROJECT_NAME");
-            System.out.println(projectName);
-            System.out.println(resultSet.getString("Build"));
-            System.out.println(resultSet.getString("platform"));
-        }
-
-        int count  = MainCall.dbOp.executeQuery(updateQuery);
-        System.out.println(count + "  rows are updated");
-        count  = MainCall.dbOp.executeQuery(deleteQuery);
-        System.out.println(count + "  rows are deleted");
-
-    }
+//    public void dataBaseQuery() throws SQLException {
+//        ResultSet resultSet = MainCall.dbOp.getResult(selectQuery);
+//        while (resultSet.next()) {
+//            projectName = resultSet.getString("PROJECT_NAME");
+//            System.out.println(projectName);
+//            System.out.println(resultSet.getString("Build"));
+//            System.out.println(resultSet.getString("platform"));
+//        }
+//
+//        int count  = MainCall.dbOp.executeQuery(updateQuery);
+//        System.out.println(count + "  rows are updated");
+//        count  = MainCall.dbOp.executeQuery(deleteQuery);
+//        System.out.println(count + "  rows are deleted");
+//
+//    }
 
     //Assignment - Login Tests
     public static void goToLoginPage()

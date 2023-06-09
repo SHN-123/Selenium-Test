@@ -43,7 +43,7 @@ public class BaseTest {
 
 
     @BeforeSuite
-    public void beforesuite(ITestContext ctx) throws SQLException, IOException, AWTException, APIException {
+    public void beforesuite(ITestContext ctx) throws SQLException, IOException, AWTException {
 
         //   MainCall.preReq.setup();
         startReport();
