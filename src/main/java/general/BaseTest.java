@@ -2,16 +2,7 @@ package general;
 
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-import com.venturedive.base.database.connection.SonarDB;
-import com.venturedive.base.exception.APIException;
-import com.venturedive.base.model.ExecutionStats;
-import com.venturedive.base.utility.JIRA;
-
 import static config.ConfigProperties.*;
-
-import com.venturedive.base.utility.MessagesIntegration;
-import com.venturedive.base.utility.SendEmailAfterExecution;
-import com.venturedive.base.utility.TestRail;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.testng.ITestContext;
 import org.testng.ITestResult;

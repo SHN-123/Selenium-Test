@@ -5,7 +5,7 @@ import preReq.TestBase;
 import com.relevantcodes.extentreports.ExtentReports;
 import io.restassured.RestAssured;
 import io.restassured.filter.log.LogDetail;
-import com.venturedive.base.database.connection.DbOperation;
+
 
 
 import java.io.File;
@@ -46,7 +46,7 @@ public class MainCall {
     public final static WebDriverFactory webDriverFactory = new WebDriverFactory();
     public final static TrainingSessionPage trainingSessionPage = new TrainingSessionPage();
     public final static WebDriverWaits webDriverWaits = new WebDriverWaits();
-    public final static  DbOperation dbOp = new DbOperation();
+    //public final static  DbOperation dbOp = new DbOperation();
     public final static TestBase preReq = new TestBase();
     public final static CommonAssertions log = new CommonAssertions();
 
