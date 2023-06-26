@@ -5,7 +5,7 @@ import io.restassured.specification.RequestSpecification;
 
 public class EnvGlobals {
 
-    public static StringBuilder Differnce = new StringBuilder() ;
+    public static StringBuilder Difference = new StringBuilder() ;
     public static RequestSpecification requestSpecification;
     public static Response response;
     public static String requestBody = "";

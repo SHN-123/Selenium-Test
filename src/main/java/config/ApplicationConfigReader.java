@@ -24,8 +24,8 @@ public class ApplicationConfigReader {
     @Property("Browser")
     private String Browser;
 
-     @Property("baseURI")
-    private String baseURI;
+     @Property("baseURL")
+    private String baseURL;
 
      @Property("url")
     private String url;
@@ -74,8 +74,8 @@ public class ApplicationConfigReader {
         return this.Browser;
     }
 
-    public String getBaseURI() {
-        return this.baseURI;
+    public String getBaseURL() {
+        return this.baseURL;
     }
     public String getUrl() {
         return this.url;

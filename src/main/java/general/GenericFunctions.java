@@ -327,12 +327,12 @@ public class GenericFunctions {
     public void clickOnColumnOfTable() {
         List<WebElement> Rows = getRowsOfTable();
         for (int i = 1; i <= Rows.size(); i++) {
-            List<WebElement> Columns = WebDriverFactory.getDriver().findElements(CheckoutPage.coloumn);
+            List<WebElement> Columns = WebDriverFactory.getDriver().findElements(CheckoutPage.column);
             for (int j =0 ; j < Columns.size(); j++)
             {
                 MainCall.webDriverWaits.sleep500();
-                MainCall.webDriverWaits.visibilityOf(CheckoutPage.coloumn);
-                click(CheckoutPage.coloumn);
+                MainCall.webDriverWaits.visibilityOf(CheckoutPage.column);
+                click(CheckoutPage.column);
 //                Actions actions = new Actions(WebDriverFactory.getDriver());
 //                actions.click(Column).build().perform();
             }

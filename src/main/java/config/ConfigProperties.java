@@ -11,7 +11,7 @@ public class ConfigProperties {
     public static String UserName = appConfig.getUserName();
     public static String Password = appConfig.getPassword();
 
-    public static String BaseURI = appConfig.getBaseURI();
+    public static String BaseURL = appConfig.getBaseURL();
     public static String Url = appConfig.getUrl();
 
     public static String IsEnableReporting = appConfig.getIsEnableReporting();

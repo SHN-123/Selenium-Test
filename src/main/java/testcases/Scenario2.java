@@ -2,18 +2,19 @@ package testcases;
 
 import general.BaseTest;
 import general.MainCall;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class Scenario2 extends BaseTest {
 
-//    @Test
-//    public static void testLogin()
-//    {
-//        MainCall.loginPage.goToLoginPage();
-//        MainCall.loginPage.setName();
-//        MainCall.loginPage.setPassword();
-//        MainCall.loginPage.login();
-//    }
+    @BeforeTest
+    public static void testLogin()
+    {
+        MainCall.loginPage.goToLoginPage();
+        MainCall.loginPage.setName();
+        MainCall.loginPage.setPassword();
+        MainCall.loginPage.login();
+    }
 
     @Test
     public static void testScenario2()

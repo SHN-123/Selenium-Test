@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="All Test Suite" thread-count="2" parallel="tests">
     <test verbose="2" preserve-order="true"
           name="C:/Users/VenD/IdeaProjects/web-automation-framework/src/main/java/testcases">
 <!--        <parameter name="Browser" value="Chrome"></parameter>-->
@@ -8,9 +8,13 @@
             <class name="testcases.Scenario1">
                 <methods>
                     <include name="testLogin"/>
-                    <include name="testScenario1"/>
                 </methods>
             </class>
+<!--            <class name="testcases.Scenario1">-->
+<!--                <methods>-->
+<!--                    <include name="testScenario2"/>-->
+<!--                </methods>-->
+<!--            </class>-->
 <!--            <class name="testcases.Scenario2">-->
 <!--                <methods>-->
 <!--                    <include name="testScenario2"/>-->

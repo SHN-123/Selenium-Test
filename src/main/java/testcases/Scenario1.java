@@ -3,31 +3,33 @@ package testcases;
 import general.BaseTest;
 import general.MainCall;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class Scenario1 extends BaseTest {
 
     @Test
-    public static void testLogin() {
+    public static void testLogin()
+    {
         MainCall.loginPage.goToLoginPage();
         MainCall.loginPage.setName();
         MainCall.loginPage.setPassword();
         MainCall.loginPage.login();
     }
-//    @Test
-//    public static void testScenario1(){
-//        MainCall.hompePage.goToHomePage();
-//        MainCall.hompePage.goToDoveItems();
-//        MainCall.productCategoryPage.sortItemsBy(MainCall.envGlobals.newestItem);
-//        MainCall.productCategoryPage.clickFirstItem();
-//        MainCall.productPage.setQuantity(MainCall.envGlobals.Quantity);
-//        MainCall.envGlobals.amount += MainCall.productPage.totalAmountOfItemsAdded();
-//        MainCall.productPage.addToCart();
-//        MainCall.checkoutPage.verifyQuantity();
-//        MainCall.checkoutPage.verifySubtotalOfItems();
-//        MainCall.checkoutPage.cleanup();
-//
-//    }
+    @Test
+    public static void testScenario1(){
+        MainCall.hompePage.goToHomePage();
+        MainCall.hompePage.goToDoveItems();
+        MainCall.productCategoryPage.sortItemsBy(MainCall.envGlobals.newestItem);
+        MainCall.productCategoryPage.clickFirstItem();
+        MainCall.productPage.setQuantity(MainCall.envGlobals.Quantity);
+        MainCall.envGlobals.amount += MainCall.productPage.totalAmountOfItemsAdded();
+        MainCall.productPage.addToCart();
+        MainCall.checkoutPage.verifyQuantity();
+        MainCall.checkoutPage.verifySubtotalOfItems();
+        MainCall.checkoutPage.cleanup();
+
+    }
 
 //    @Test(priority = 2)
 //    public static void testScenario2()
@@ -50,7 +52,7 @@ public class Scenario1 extends BaseTest {
 //
 //    }
 
-//        @Test(priority = 3)
+//    @Test(priority = 3)
 //    public static void testScenario3()
 //    {
 //        MainCall.productCategoryPage.clickSkinCareAndSelectItems();
@@ -65,12 +67,13 @@ public class Scenario1 extends BaseTest {
 //
 //    }
 //    @Test(priority = 4)
-//    public static void testScenario4() {
+//    public static void testScenario4()
+//    {
 //        MainCall.productCategoryPage.clickMensSubmenuAndFindItems();
 //        MainCall.hompePage.goToCart();
 //        MainCall.checkoutPage.verifyItemsNameEndsWithM();
 //        MainCall.checkoutPage.cleanup();
-//   }
+////    }
 //    @AfterMethod
 //    public static void cleanup()
 //    {
@@ -81,5 +84,6 @@ public class Scenario1 extends BaseTest {
 //        MainCall.envGlobals.amount = 0;
 //        MainCall.envGlobals.subtotal =0;
 //    }
+
 
     }

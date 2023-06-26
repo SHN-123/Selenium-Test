@@ -5,15 +5,11 @@ import preReq.TestBase;
 import com.relevantcodes.extentreports.ExtentReports;
 import io.restassured.RestAssured;
 import io.restassured.filter.log.LogDetail;
-
-
-
 import java.io.File;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-
-import static config.ConfigProperties.BaseURI;
+import static config.ConfigProperties.BaseURL;
 import static config.ConfigProperties.Environment;
 
 public class MainCall {
@@ -69,7 +65,7 @@ public class MainCall {
 
     public static void setupPreReqs() throws SQLException {
         //Rest Assured config
-        RestAssured.baseURI = BaseURI;
+        RestAssured.baseURI = BaseURL;
         RestAssured.enableLoggingOfRequestAndResponseIfValidationFails(LogDetail.ALL);
         RestAssured.useRelaxedHTTPSValidation();
         TestBase.setup();

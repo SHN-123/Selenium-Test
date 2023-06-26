@@ -14,7 +14,7 @@ public class CheckoutPage {
     public static By table =
             By.cssSelector("#cart > div > div.container-fluid.cart-info.product-list > table");
     public static By rows = By.cssSelector("#cart div div.container-fluid.cart-info.product-list table tr");
-    public static By coloumn = By.cssSelector(("#cart div div.container-fluid.cart-info.product-list table tr td:nth-child(7)"));
+    public static By column = By.cssSelector(("#cart div div.container-fluid.cart-info.product-list table tr td:nth-child(7)"));
     public static By quantity = By.cssSelector("#cart > div > div.container-fluid.cart-info.product-list > table > tbody > tr:nth-child(2) > td:nth-child(5) > div > input");
     public static By totalPrice = By.xpath("//*[@class='table table-striped table-bordered']//tr[2]//td[6]");
     public static String itemsName;
@@ -63,6 +63,7 @@ public class CheckoutPage {
         MainCall.envGlobals.subtotal =
                 Integer.parseInt(MainCall.genericFunctions.getText(subtotal).substring(1,MainCall.genericFunctions.getText(subtotal).length()-3));
         Assert.assertEquals(MainCall.envGlobals.amount, MainCall.envGlobals.subtotal);
+        System.out.println("Sub Total of Items:" +MainCall.envGlobals.amount);
 
     }
     public static void cleanup()

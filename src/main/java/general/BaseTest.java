@@ -60,7 +60,7 @@ public class BaseTest {
         if (IsEnableReporting.equals("true")) {
             MainCall.startReport();
         }
-        startTime = getTime(); // For reporting into db
+        startTime = getTime(); // For reporting into database
     }
 
 //    @Parameters("Browser")
